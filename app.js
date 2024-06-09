@@ -15,7 +15,7 @@ Vue.createApp({
             this.rotateZ = 0;
         },
         async copy() {
-            let text = 'transform:${this.box.transform};'
+            let text = `transform:${this.box.transform};`
             await navigator.clipboard.writeText(text)
 
             alert('CSS Copied to clipboard')
